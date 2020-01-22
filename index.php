@@ -1,3 +1,4 @@
 <?php
-include 'inc/links.php';
-include 'templates/index.view.php';
+require 'inc/config.php';
+require 'inc/links.php';
+require_once "templates/".activeTemplate."/index.view.php";

@@ -2,18 +2,17 @@
 
 $nav = [
     'sidebar' => [
-        'Naujausi' => 'kitm',
-        'Paieska' => 'kitm',
-        'Profilis' => 'kitm',
-        'Statistika' => 'kitm'
+        'visi' => 'Visi filmai',
+        'zanrai' => 'Filmai pagal zanra',
+        'paieska' => 'Paieska'
     ],
     'header' => [
-        'Pagrindinis' => 'kitm',
-        'Pagrindinis2' => 'kitm',
+        '/' => 'Pagrindinis',
+        'apie' => 'Apie projekta',
         'Dropdown' => [
-            'Action' => 'kitm',
-            'Action2' => 'kitm',
-            'Action3' => 'kitm'
+            'filmu-valdymas' => 'Filmu valdymas',
+            'zanru-valdymas' => 'Zanru valdymas',
+            'profilio-valdymas' => 'Profilio valdymas'
         ]
     ]
 ];
