@@ -2,51 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac34b3c3-7f72-4af2-9424-1ef380825c4d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/index.view.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/add_movie.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/all_films.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/all_films.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/delete_film.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/delete_film.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/filter_films.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/filter_films.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/home.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/home.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/login.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/login.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/more_info.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/more_info.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/register.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/register.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/search.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/search.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/send_link.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/send_link.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/stats.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/stats.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/update_film.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/update_film.page.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/_partials/nav.view.php" afterPath="$PROJECT_DIR$/templates/main/_partials/nav.view.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-grid.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-grid.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-grid.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-grid.min.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-grid.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-reboot.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-reboot.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-reboot.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-reboot.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap-reboot.min.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap-reboot.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/templates/main/css/bootstrap.min.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/css/simple-sidebar.css" afterPath="$PROJECT_DIR$/templates/main/css/simple-sidebar.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.bundle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.bundle.js.map" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.bundle.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.bundle.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.bundle.min.js.map" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.bundle.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.js" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.js.map" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/bootstrap.min.js.map" afterPath="$PROJECT_DIR$/templates/main/js/bootstrap.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.js" afterPath="$PROJECT_DIR$/templates/main/js/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.min.js" afterPath="$PROJECT_DIR$/templates/main/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.min.map" afterPath="$PROJECT_DIR$/templates/main/js/jquery.min.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.slim.js" afterPath="$PROJECT_DIR$/templates/main/js/jquery.slim.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.slim.min.js" afterPath="$PROJECT_DIR$/templates/main/js/jquery.slim.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/js/jquery.slim.min.map" afterPath="$PROJECT_DIR$/templates/main/js/jquery.slim.min.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/config.php" afterPath="$PROJECT_DIR$/inc/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/links.php" afterPath="$PROJECT_DIR$/inc/links.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/index.view.php" afterPath="$PROJECT_DIR$/templates/main/index.view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/pages/all_films.page.php" afterPath="$PROJECT_DIR$/templates/main/pages/all_films.page.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +21,8 @@
       <file leaf-file-name="links.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/links.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            <state relative-caret-position="324">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -80,8 +41,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+            <state relative-caret-position="108">
+              <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -90,18 +51,42 @@
       <file leaf-file-name="nav.view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main/_partials/nav.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="243">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.view.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/main/_partials/header.view.php">
+      <file leaf-file-name="all_films.page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/main/pages/all_films.page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="432">
+              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="45" />
+              <folding>
+                <marker date="1579683775215" expanded="true" signature="166:194" ph="SELECT * FRO... lentele_filmai" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_movie.page.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/main/pages/add_movie.page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding>
+                <marker date="1579685485676" expanded="true" signature="145:173" ph="SELECT * FRO... lentele_zanrai" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="router.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/router.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -110,8 +95,28 @@
       <file leaf-file-name="index.view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main/index.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+            <state relative-caret-position="837">
+              <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/main/_partials/header.view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -127,11 +132,15 @@
       <list>
         <option value="$PROJECT_DIR$/templates/index.view.php" />
         <option value="$PROJECT_DIR$/inc/config.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/templates/main/index.view.php" />
-        <option value="$PROJECT_DIR$/inc/links.php" />
         <option value="$PROJECT_DIR$/templates/main/_partials/nav.view.php" />
         <option value="$PROJECT_DIR$/templates/main/_partials/header.view.php" />
+        <option value="$PROJECT_DIR$/inc/links.php" />
+        <option value="$PROJECT_DIR$/templates/main/index.view.php" />
+        <option value="$PROJECT_DIR$/inc/db.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/templates/main/pages/all_films.page.php" />
+        <option value="$PROJECT_DIR$/router.php" />
+        <option value="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" />
       </list>
     </option>
   </component>
@@ -192,7 +201,7 @@
               <item name="php_film_website" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -238,12 +247,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579503988934</updated>
       <workItem from="1579503990184" duration="6798000" />
-      <workItem from="1579673129363" duration="3946000" />
+      <workItem from="1579673129363" duration="9805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10744000" />
+    <option name="totallyTimeSpent" value="16603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -320,24 +329,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/pages/add_movie.page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/pages/all_films.page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/pages/delete_film.page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -345,6 +341,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -352,6 +349,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -436,26 +434,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/templates/main/pages/all-genre.page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="59" lean-forward="true" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/links.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="108">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/index.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="78" lean-forward="true" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/_partials/nav.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="243">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/pages/all_films.page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <marker date="1579683775215" expanded="true" signature="166:194" ph="SELECT * FRO... lentele_filmai" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/_partials/header.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -468,19 +492,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/index.view.php">
+    <entry file="file://$PROJECT_DIR$/inc/links.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        <state relative-caret-position="324">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/_partials/header.view.php">
+    <entry file="file://$PROJECT_DIR$/inc/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="2" column="48" lean-forward="false" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/pages/add_movie.page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <marker date="1579685485676" expanded="true" signature="145:173" ph="SELECT * FRO... lentele_zanrai" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ $nav = [
         'paieska' => 'Paieska'
     ],
     'header' => [
-        '/' => 'Pagrindinis',
+        '' => 'Pagrindinis',
         'apie' => 'Apie projekta',
         'Dropdown' => [
             'filmu-valdymas' => 'Filmu valdymas',

@@ -26,11 +26,12 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <?php include "_partials/nav.view.php"?>
-        <div class="container-fluid">
-            <h1 class="mt-4">Simple Sidebar</h1>
-            <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-        </div>
+        <main class="container-fluid">
+            <?php
+            // echo $_SERVER['DOCUMENT_ROOT'].'/php_film_website/router.php';
+            require ($_SERVER['DOCUMENT_ROOT'].'/php_film_website/router.php')
+            ?>
+        </main>
     </div>
     <!-- /#page-content-wrapper -->
 
