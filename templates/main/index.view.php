@@ -11,10 +11,10 @@
     <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/php_task_3/templates/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/php_film_website/templates/main/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/php_task_3/templates/css/simple-sidebar.css" rel="stylesheet">
+    <link href="/php_film_website/templates/main/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
@@ -39,8 +39,8 @@
 <!-- /#wrapper -->
 
 <!-- Bootstrap core JavaScript -->
-<script src="/php_task_3/templates/js/jquery.min.js"></script>
-<script src="/php_task_3/templates/js/bootstrap.bundle.min.js"></script>
+<script src="/php_film_website/templates/main/js/jquery.min.js"></script>
+<script src="/php_film_website/templates/main/js/bootstrap.bundle.min.js"></script>
 
 <!-- Menu Toggle Script -->
 <script>
