@@ -65,7 +65,7 @@ if($validation_errors) :?>
             $stmt->bindParam(':metai', $_POST['metai'], PDO::PARAM_STR);
             $stmt->bindParam(':rezisierius', $_POST['rezisierius'], PDO::PARAM_STR);
             $stmt->bindParam(':imdb', $_POST['imdb'], PDO::PARAM_STR);
-            $stmt->bindParam(':genre_id', $_POST['genre_id'], PDO::PARAM_STR);
+            $stmt->bindParam(':genre_id', $_POST['zanras'], PDO::PARAM_STR);
             $stmt->execute();
             header('Location:'.path.'?page=visi');
         }
@@ -110,7 +110,7 @@ if($validation_errors) :?>
             <select id="zanras" name="zanras" class="form-control">
                 <option selected>Pasirinkite...</option>
                 <?php foreach ($zanrai as $zanras):?>
-                <option><?= $zanras['pavadinimas'];?></option>
+                <option value="<?=$zanras['id'];?>"><?= $zanras['pavadinimas'];?></option>
                 <?php endforeach;?>
             </select>
         </div>
