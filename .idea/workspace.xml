@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac34b3c3-7f72-4af2-9424-1ef380825c4d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmu_duombaze (1).sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/pages/delete_film.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/delete_film.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/update_film.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/update_film.page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +66,7 @@
       <workItem from="1579759376782" duration="11735000" />
       <workItem from="1579860128036" duration="10704000" />
       <workItem from="1580038136517" duration="6000" />
-      <workItem from="1580038151802" duration="6820000" />
+      <workItem from="1580038151802" duration="10669000" />
     </task>
     <servers />
   </component>
