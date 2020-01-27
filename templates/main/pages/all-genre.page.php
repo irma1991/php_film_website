@@ -1,27 +1,7 @@
 <h2>Visi filmu zanrai</h2>
 <?php
-$dsn = "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dsn, $username, $password, $options);
-    if($conn){
-
-        $stmt = $conn->query ("SELECT * FROM lentele_zanrai");
-        $zanrai = $stmt->fetchAll();
-
-        if(isset($_GET['id'])){
-            $zandroId = $_GET['id'];
-            $stmt = $conn->query ("SELECT lentele_filmai.pavadinimas, lentele_filmai.aprasymas, lentele_filmai.metai,
-                                        lentele_filmai.rezisierius, lentele_filmai.imdb, lentele_zanrai.pavadinimas
-                                        AS zanroPavadinimas
-                                        FROM lentele_filmai
-                                        INNER JOIN lentele_zanrai ON lentele_filmai.genre_id=lentele_zanrai.id
-                                        WHERE $zandroId=lentele_zanrai.id");
-            $pagalZanrus = $stmt->fetchAll();
-        }
-    }
-} catch (PDOException $e){
-    echo $e->getMessage();
-}
+connectionDB();
+$zanrai = allGenres();
 ?>
 
         <?php foreach ($zanrai as $zanras):?>
@@ -32,6 +12,8 @@ try{
             </ul>
             <?php endforeach;?>
 <?php if(isset($_GET['id'])):?>
+    <?php $zandroId = $_GET['id'];
+    $pagalZanrus = filmByGenre($zandroId);?>
     <table class = "table table-bordered">
         <thead>
         <tr>

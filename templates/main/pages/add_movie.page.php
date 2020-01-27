@@ -67,7 +67,7 @@ if($validation_errors) :?>
             $stmt->bindParam(':imdb', $_POST['imdb'], PDO::PARAM_STR);
             $stmt->bindParam(':genre_id', $_POST['zanras'], PDO::PARAM_STR);
             $stmt->execute();
-            header('Location:'.path.'?page=visi');
+            header('Location:'.path.'?page=filmu-valdymas');
         }
     } catch (PDOException $e){
         echo $e->getMessage();
@@ -114,6 +114,6 @@ if($validation_errors) :?>
                 <?php endforeach;?>
             </select>
         </div>
-    <button type="submit" class="btn btn-primary" id="submit" name="submit">Submit</button>
+    <button type="submit" class="btn btn-primary" id="submit" name="submit">Patvirtinti</button>
 </form>
 </div>

@@ -22,6 +22,15 @@
          case 'filmu-salinimas':
              include ('templates/'.activeTemplate.'/pages/delete_film.page.php');
              break;
+         case 'zanru-valdymas':
+             include ('templates/'.activeTemplate.'/pages/all_genres_management.page.php');
+             break;
+         case 'naujas-zanras':
+             include ('templates/'.activeTemplate.'/pages/add_genre.page.php');
+             break;
+         case 'zanru-salinimas':
+             include ('templates/'.activeTemplate.'/pages/delete_genre.page.php');
+             break;
          default:
      }
  } else {

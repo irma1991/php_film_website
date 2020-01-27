@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Filmu valdymo puslapis</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/php_film_website/templates/main/css/bootstrap.min.css" rel="stylesheet">
