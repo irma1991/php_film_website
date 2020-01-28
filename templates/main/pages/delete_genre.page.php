@@ -1,32 +1,8 @@
 <h2>Zanro istrynimas</h2>
 <?php
-
-$dns= "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dns, $username, $password, $options);
-    if($conn){
-        $kuriTrinam = $_GET['id'];
-        $stmt = $conn->query("SELECT * FROM lentele_zanrai
-                              WHERE id = $kuriTrinam");
-        $zanras = $stmt->fetch();
-    }
-} catch (PDOException $e) {
-    echo $e->getMessage();
-} ?>
-<?php if (isset($_POST['submit'])){
-    try {
-        if ($conn){
-            $sql = "DELETE FROM lentele_zanrai                
-                    WHERE id = :id";
-            $stmt= $conn->prepare($sql);
-            $stmt->bindParam(':id', $_POST['id'], PDO::PARAM_STR);
-            $stmt->execute();
-            header('Location:'.path.'?page=zanru-valdymas');
-        }
-    } catch (PDOException $e){
-        echo $e->getMessage();
-    }
-}
+connectionDB();
+$zanras = deleteGenre($_GET['id']);
+deleteGenre2();
 
 ?>
 

@@ -1,15 +1,7 @@
 <?php
-$dsn = "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dsn, $username, $password, $options);
-    if($conn){
-
-        $stmt = $conn->query ("SELECT * FROM lentele_zanrai");
-        $zanrai = $stmt->fetchAll();
-    }
-} catch (PDOException $e){
-    echo $e->getMessage();
-}?>
+connectionDB();
+$zanrai = addFilm();
+?>
 
 <?php
 $validation_errors=[];
@@ -54,26 +46,8 @@ if($validation_errors) :?>
 
 <?php endif; ?>
 
-<?php if (isset($_POST['submit'])){
-    try {
-        if ($conn){
-            $sql = "INSERT INTO lentele_filmai (pavadinimas, aprasymas, metai, rezisierius, imdb, genre_id)
-            VALUES (:pavadinimas, :aprasymas, :metai, :rezisierius, :imdb, :genre_id)";
-            $stmt= $conn->prepare($sql);
-            $stmt->bindParam(':pavadinimas', $_POST['pavadinimas'], PDO::PARAM_STR);
-            $stmt->bindParam(':aprasymas', $_POST['aprasymas'], PDO::PARAM_STR);
-            $stmt->bindParam(':metai', $_POST['metai'], PDO::PARAM_STR);
-            $stmt->bindParam(':rezisierius', $_POST['rezisierius'], PDO::PARAM_STR);
-            $stmt->bindParam(':imdb', $_POST['imdb'], PDO::PARAM_STR);
-            $stmt->bindParam(':genre_id', $_POST['zanras'], PDO::PARAM_STR);
-            $stmt->execute();
-            header('Location:'.path.'?page=filmu-valdymas');
-        }
-    } catch (PDOException $e){
-        echo $e->getMessage();
-    }
-}
-
+<?php
+addFilm2();
 ?>
 
 <div class = "container">

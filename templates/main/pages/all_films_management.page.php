@@ -1,21 +1,9 @@
 <h2>Filmu valdymas</h2>
 <?php
-$dsn = "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dsn, $username, $password, $options);
-    if($conn){
-
-        $stmt = $conn->query ("SELECT lentele_filmai.id, lentele_filmai.pavadinimas, lentele_filmai.aprasymas, lentele_filmai.metai,
-                                        lentele_filmai.rezisierius, lentele_filmai.imdb, lentele_zanrai.pavadinimas
-                                        AS zanroPavadinimas
-                                        FROM lentele_filmai
-                                        INNER JOIN lentele_zanrai ON lentele_filmai.genre_id=lentele_zanrai.id");
-        $filmai = $stmt->fetchAll();
-    }
-} catch (PDOException $e){
-    echo $e->getMessage();
-}
+connectionDB();
+$filmai = filmsManagement();
 ?>
+
 <div class = "container">
     <a href = "?page=naujas-filmas"><button type="button" class="btn btn-secondary">Naujas filmas</button></a>
     <br><br>

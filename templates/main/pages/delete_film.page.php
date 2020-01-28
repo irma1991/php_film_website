@@ -1,36 +1,8 @@
 <h2>Filmo istrynimas</h2>
 <?php
-
-$dns= "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dns, $username, $password, $options);
-    if($conn){
-        $kuriTrinam = $_GET['id'];
-        $stmt = $conn->query("SELECT lentele_filmai.id, lentele_filmai.pavadinimas, lentele_filmai.aprasymas, 
-                              lentele_filmai.metai, lentele_filmai.rezisierius, lentele_filmai.imdb, lentele_zanrai.pavadinimas AS zanroPavadinimas
-                              FROM lentele_filmai 
-                              INNER JOIN lentele_zanrai ON lentele_filmai.genre_id=lentele_zanrai.id
-                              WHERE lentele_filmai.id = $kuriTrinam");
-        $filmas = $stmt->fetch();
-    }
-} catch (PDOException $e) {
-    echo $e->getMessage();
-} ?>
-<?php if (isset($_POST['submit'])){
-    try {
-        if ($conn){
-            $sql = "DELETE FROM lentele_filmai                
-                    WHERE id = :id";
-            $stmt= $conn->prepare($sql);
-            $stmt->bindParam(':id', $_POST['id'], PDO::PARAM_STR);
-            $stmt->execute();
-            header('Location:'.path.'?page=filmu-valdymas');
-        }
-    } catch (PDOException $e){
-        echo $e->getMessage();
-    }
-}
-
+connectionDB();
+$filmas = deleteFilm($_GET['id']);
+deleteFilm2();
 ?>
 
 <div class="container">

@@ -1,21 +1,6 @@
 <?php
-$dsn = "mysql:host=$host;dbname=$db";
-try{
-    $conn = new PDO($dsn, $username, $password, $options);
-    if($conn){
-        if (isset($_POST['submit'])){
-
-            $sql = "INSERT INTO lentele_zanrai (pavadinimas)
-                    VALUES (:pavadinimas)";
-            $stmt= $conn->prepare($sql);
-            $stmt->bindParam(':pavadinimas', $_POST['pavadinimas'], PDO::PARAM_STR);
-            $stmt->execute();
-            header('Location:'.path.'?page=zanru-valdymas');
-        }
-    }
-} catch (PDOException $e){
-    echo $e->getMessage();
-}?>
+addGenre();
+?>
 
 <?php
 $validation_errors=[];
