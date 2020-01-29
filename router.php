@@ -31,6 +31,12 @@
          case 'zanru-salinimas':
              include ('templates/'.activeTemplate.'/pages/delete_genre.page.php');
              break;
+         case 'prisijungti':
+             include ('templates/'.activeTemplate.'/pages/login.page.php');
+             break;
+         case 'atsijungti':
+             include ('templates/'.activeTemplate.'/pages/logout.page.php');
+             break;
          default:
      }
  } else {

@@ -12,7 +12,7 @@ $nav = [
         'Dropdown' => [
             'filmu-valdymas' => 'Filmu valdymas',
             'zanru-valdymas' => 'Zanru valdymas',
-            'profilio-valdymas' => 'Profilio valdymas'
+            'prisijungti' => 'Prisijungti'
         ]
     ]
 ];

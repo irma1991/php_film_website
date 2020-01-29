@@ -5,17 +5,20 @@ $zanrai = allGenres();
 ?>
 
         <?php foreach ($zanrai as $zanras):?>
+        <div class = "container">
             <ul class = "list-group">
                 <li class = "list-group-item">
-                    <a href="?page=zanrai&id=<?=$zanras['id'];?>"><?=$zanras['pavadinimas'];?></a>
+                    <a style = "color: #495057;" href="?page=zanrai&id=<?=$zanras['id'];?>"><?=$zanras['pavadinimas'];?></a>
                 </li>
             </ul>
+        </div>
             <?php endforeach;?>
 <?php if(isset($_GET['id'])):?>
     <?php $zandroId = $_GET['id'];
     $pagalZanrus = filmByGenre($zandroId);?>
-    <table class = "table table-bordered">
-        <thead>
+<div class = "container show-by-genre">
+    <table class = "table table-bordered show-by-genre-table">
+        <thead class = "show-by-genre-table-head">
         <tr>
             <td>Pavadinimas</td>
             <td>Aprasymas</td>
@@ -38,4 +41,5 @@ $zanrai = allGenres();
         <?php endforeach;?>
         </tr>
     </table>
+</div>
 <?php endif;?>

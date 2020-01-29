@@ -1,13 +1,15 @@
-<h1>Filmo redagavimas</h1>
+<?php session_start();
+if($_SESSION['vardas'] == "admin"):
+?>
 <?php
 connectionDB();
 $filmas = updateFilm($_GET['id']);
 updateFilm2();
 
 ?>
-
-<div class="container">
-    <form method="post">
+<h2>Filmo redagavimas</h2>
+<div class="container add-film">
+    <form method="post" class = "add-film-form">
         <div class="form-group">
             <label for="id">Filmo id</label>
             <input type="text" class="form-control" id="id" name="id"  value="<?=$filmas['id']; ?>">
@@ -39,6 +41,11 @@ updateFilm2();
         <div class="form-group">
             <input type="text" class="form-control" id="zanroID" name="zanroID"  value="<?=$filmas['zanro_id']; ?>">
         </div>
-        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+        <div class = "add-film-button">
+            <button type="submit" name="submit" class="btn btn-secondary">Patvirtinti</button>
+        </div>
     </form>
 </div>
+<?php else:?>
+    <?php header('Location:'.path.'?page=prisijungti'); ?>
+<?php endif;?>

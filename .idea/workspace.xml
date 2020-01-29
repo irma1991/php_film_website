@@ -4,13 +4,25 @@
     <list default="true" id="ac34b3c3-7f72-4af2-9424-1ef380825c4d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/links.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/_partials/nav.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/_partials/nav.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/add_genre.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/add_genre.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/add_movie.page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/all-genre.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/all-genre.page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/all_films.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/all_films.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/all_films_management.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/all_films_management.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/all_genres_management.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/all_genres_management.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/delete_film.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/delete_film.page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/delete_genre.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/delete_genre.page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/filter_films.page.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/login.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/login.page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/more_info.page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/register.page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/search.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/search.page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/send_link.page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/pages/stats.page.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main/pages/update_film.page.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/pages/update_film.page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +34,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,14 +54,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php_film_website\templates\main" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\php_film_website\templates\main" />
     </key>
   </component>
@@ -78,7 +98,10 @@
       <workItem from="1580105566414" duration="3000" />
       <workItem from="1580105581094" duration="10392000" />
       <workItem from="1580239143860" duration="8000" />
-      <workItem from="1580239161442" duration="3824000" />
+      <workItem from="1580239161442" duration="4094000" />
+      <workItem from="1580285626860" duration="35000" />
+      <workItem from="1580285672507" duration="4347000" />
+      <workItem from="1580316724236" duration="11877000" />
     </task>
     <servers />
   </component>
@@ -86,9 +109,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="575" y="532" key="com.intellij.ide.util.TipDialog" timestamp="1580239145424">
+    <state x="647" y="466" key="FileChooserDialogImpl" timestamp="1580285922638">
       <screen x="0" y="0" width="3440" height="1410" />
     </state>
-    <state x="575" y="532" key="com.intellij.ide.util.TipDialog/0.0.3440.1410@0.0.3440.1410" timestamp="1580239145424" />
+    <state x="647" y="466" key="FileChooserDialogImpl/0.0.3440.1410@0.0.3440.1410" timestamp="1580285922638" />
+    <state x="694" y="639" key="NewPhpFileDialog" timestamp="1580321205126">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="694" y="639" key="NewPhpFileDialog/0.0.3440.1410@0.0.3440.1410" timestamp="1580321205126" />
+    <state x="575" y="532" key="com.intellij.ide.util.TipDialog" timestamp="1580285628183">
+      <screen x="0" y="0" width="3440" height="1410" />
+    </state>
+    <state x="575" y="532" key="com.intellij.ide.util.TipDialog/0.0.3440.1410@0.0.3440.1410" timestamp="1580285628183" />
   </component>
 </project>

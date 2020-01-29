@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <button class="btn btn-primary" id="menu-toggle">Nerodyti Meniu</button>
+    <button class="btn btn-secondary" id="menu-toggle">Nerodyti Meniu</button>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,6 +28,10 @@
                             <?php endif;?>
                         <?php endforeach;?>
                     <?php endforeach;?>
+
+                    <?php if($_SESSION['vardas'] = "admin"): ?>
+                        <a class="dropdown-item" href ="?page=atsijungti">Atsijungti</a>
+                    <?php endif; ?>
                 </div>
             </li>
         </ul>

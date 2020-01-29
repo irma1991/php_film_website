@@ -15,7 +15,7 @@ $filmai = searchPavadinimas();
             <?php endforeach; ?>
         </datalist>
     </div>
-    <button type="submit" class="btn btn-primary" name="search">Patvirtinti</button>
+    <button type="submit" class="btn btn-secondary" name="search">Patvirtinti</button>
 </form>
 </div>
 <?php if(isset($_POST['pavadinimas'])):?>
@@ -23,8 +23,9 @@ $filmai = searchPavadinimas();
     $input = $_POST['pavadinimas'];
     $rezultatai = searchFilmas($input);
     ?>
-    <table class = "table table-bordered">
-        <thead>
+<div class = "container search-film">
+    <table class = "table table-bordered search-film-table">
+        <thead class = "search-film-table-head">
         <tr>
             <td>Pavadinimas</td>
             <td>Aprasymas</td>
@@ -47,4 +48,5 @@ $filmai = searchPavadinimas();
         <?php endforeach;?>
         </tr>
     </table>
+</div>
 <?php endif;?>

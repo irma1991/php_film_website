@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2020 m. Sau 26 d. 20:19
+-- Generation Time: 2020 m. Sau 29 d. 21:18
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -48,7 +48,13 @@ INSERT INTO `lentele_filmai` (`id`, `pavadinimas`, `aprasymas`, `metai`, `rezisi
 (3, 'Kolibrio projektas', 'Labai retai toks mokslinis terminas kaip auksto daznio prekyba yra panaudojamas pristatant veiksmo trileri, taciau filmui Kolibrio projektas jis puikiai tinka.', '2018', 'Kim', '6.2', '2'),
 (12, 'Frozen', 'Frozen', '2007', 'Frozen 123', '8.6', '1'),
 (14, 'Mazosios moterys', 'Amerikietes Louisos May Alcott pries pusantro simto metu parasytas romanas „Mazosios moterys“ laikomas tikra savo zanro klasika ir lyginamas su seseru Bronte ar Dzeines Osten kuryba.', '2019', 'Greta Gerwig', '9', '2'),
-(15, 'Daktaras miegas', 'Stiveno Kingo „Daktaras Miegas“ pasakoja Denio Torenso istorija – vyro, kuris pries 40 metu, dar budamas berniukas, nuo pasaulio atkirstame viesbutyje isgyveno siaubinga žiema filme „Svytejimas“.', '2019', 'Mike Flanagan', '7.5', '2');
+(15, 'Daktaras miegas', 'Stiveno Kingo „Daktaras Miegas“ pasakoja Denio Torenso istorija – vyro, kuris pries 40 metu, dar budamas berniukas, nuo pasaulio atkirstame viesbutyje isgyveno siaubinga žiema filme „Svytejimas“.', '2019', 'Mike Flanagan', '8', '2'),
+(16, 'Istorija apie mus', 'Amerikietes Louisos May Alcott pries pusantro simto metu parasytas romanas „Mazosios moterys“ laikomas tikra savo zanro klasika ir lyginamas su seseru Bronte ar Dzeines Osten kuryba.', '2018', 'Mike Flanagan', '5', '3'),
+(40, 'Meiles laivas', 'Stiveno Kingo „Daktaras Miegas“ pasakoja Denio Torenso istorija – vyro, kuris pries 40 metu, dar budamas berniukas, nuo pasaulio atkirstame viesbutyje isgyveno siaubinga žiema filme „Svytejimas“.', '2017', 'Greta Gerwig', '8.6', '10'),
+(45, '///', '', 'Pasirinkite...', '', '', 'Pasirinkite...'),
+(46, '///', '', 'Pasirinkite...', '', '', 'Pasirinkite...'),
+(47, '///', '', 'Pasirinkite...', '', '', 'Pasirinkite...'),
+(48, '///', '', 'Pasirinkite...', '', '', 'Pasirinkite...');
 
 -- --------------------------------------------------------
 
@@ -67,7 +73,30 @@ CREATE TABLE `lentele_zanrai` (
 
 INSERT INTO `lentele_zanrai` (`id`, `pavadinimas`) VALUES
 (1, 'Komedijos'),
-(2, 'Siaubo');
+(2, 'Siaubo'),
+(3, 'Istoriniai'),
+(10, 'Romantiniai');
+
+-- --------------------------------------------------------
+
+--
+-- Sukurta duomenų struktūra lentelei `vartotojai`
+--
+
+CREATE TABLE `vartotojai` (
+  `id` int(11) NOT NULL,
+  `username` varchar(200) DEFAULT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Sukurta duomenų kopija lentelei `vartotojai`
+--
+
+INSERT INTO `vartotojai` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin123'),
+(2, 'admin_second', 'admin456'),
+(3, 'admin_irma', 'irma1991');
 
 --
 -- Indexes for dumped tables
@@ -86,6 +115,12 @@ ALTER TABLE `lentele_zanrai`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `vartotojai`
+--
+ALTER TABLE `vartotojai`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -93,13 +128,19 @@ ALTER TABLE `lentele_zanrai`
 -- AUTO_INCREMENT for table `lentele_filmai`
 --
 ALTER TABLE `lentele_filmai`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `lentele_zanrai`
 --
 ALTER TABLE `lentele_zanrai`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT for table `vartotojai`
+--
+ALTER TABLE `vartotojai`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

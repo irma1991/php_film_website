@@ -1,11 +1,13 @@
-<h2>Visi filmai</h2>
 <?php
 connectionDB();
 $filmai = allFilms();
 ?>
 
-<table class = "table table-bordered">
-    <thead>
+<h2>Visi filmai</h2>
+
+<div class = "container">
+<table class = "table table-bordered all-films-table">
+    <thead class = "all-films-table-head">
     <tr>
         <td>Pavadinimas</td>
         <td>Aprasymas</td>
@@ -28,3 +30,4 @@ $filmai = allFilms();
     <?php endforeach;?>
     </tr>
 </table>
+</div>

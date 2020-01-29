@@ -1,57 +1,30 @@
+<?php session_start();
+if($_SESSION['vardas'] == "admin"):
+?>
+
+<?php $validation_errors= formFilmValidation();?>
+
 <?php
 connectionDB();
 $zanrai = addFilm();
 ?>
 
 <?php
-$validation_errors=[];
-if (isset($_POST['submit'])){
-    if (!preg_match('/\w{1,30}$/',
-        trim(htmlspecialchars($_POST['pavadinimas']))) ){
-        $validation_errors[] = "pavadinimas negali virsyti 30 simboliu ir trumpesnis uz 1";
-    } else {
-        $_POST['pavadinimas'] = trim(htmlspecialchars( $_POST['pavadinimas']));
-    }
-    if (!preg_match('/[\w\s{50,1000}]/i',
-        trim(htmlspecialchars($_POST['aprasymas'])))) {
-        $validation_errors[] = "netinkamas aprasymo formatas";
-    } else {
-        $_POST['aprasymas'] = trim(htmlspecialchars($_POST['aprasymas']));
-    }
-
-    if (!preg_match('/\w{1,30}$/',
-        trim(htmlspecialchars($_POST['rezisierius']))) ){
-        $validation_errors[] = "pavadinimas negali virsyti 30 simboliu ir trumpesnis uz 1";
-    } else {
-        $_POST['rezisierius'] = trim(htmlspecialchars( $_POST['rezisierius']));
-    }
-    if (!preg_match('/\d\.\d/',
-        trim(htmlspecialchars($_POST['imdb'])))){
-        $validation_errors[] = "ivertinimai - netinkamas formatas";
-    } else {
-        $_POST['imdb'] = trim(htmlspecialchars($_POST['imdb']));
-    }
-}
-?>
-
-<?php
 if($validation_errors) :?>
-    <div class="errors">
+    <div class="container errors">
         <ul>
             <?php foreach($validation_errors as $error) :?>
-                <li><?= $error; ?></li>
+                <li><i class="fas fa-exclamation"></i> <?= $error; ?></li>
             <?php endforeach; ?>
         </ul>
     </div>
 
 <?php endif; ?>
 
-<?php
-addFilm2();
-?>
-
-<div class = "container">
-<form method="post">
+<?php addFilm2();?>
+<h2>Pridekite nauja filma</h2>
+<div class = "container add-film">
+<form method="post" class = "add-film-form">
     <div class="form-group">
         <label>Filmo pavadinimas</label>
         <input class="form-control" id="pavadinimas" name="pavadinimas">
@@ -88,6 +61,11 @@ addFilm2();
                 <?php endforeach;?>
             </select>
         </div>
-    <button type="submit" class="btn btn-primary" id="submit" name="submit">Patvirtinti</button>
+    <div class = "add-film-button">
+        <button type="submit" class="btn btn-secondary" id="submit" name="submit">Patvirtinti</button>
+    </div>
 </form>
 </div>
+<?php else:?>
+    <?php header('Location:'.path.'?page=prisijungti'); ?>
+<?php endif;?>

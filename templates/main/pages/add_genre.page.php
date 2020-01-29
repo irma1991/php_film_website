@@ -1,37 +1,35 @@
-<?php
-addGenre();
+<?php session_start();
+if($_SESSION['vardas'] == "admin"):
 ?>
 
-<?php
-$validation_errors=[];
-if (isset($_POST['submit'])){
-    if (!preg_match('/[\w\s{50,1000}]/i',
-        trim(htmlspecialchars($_POST['pavadinimas'])))) {
-        $validation_errors[] = "netinkamas formatas";
-    } else {
-        $_POST['pavadinimas'] = trim(htmlspecialchars($_POST['pavadinimas']));
-    }
-}
-?>
+<?php $validation_errors = formGenreValidation();?>
+<?php connectionDB(); ?>
 
 <?php
 if($validation_errors) :?>
-    <div class="errors">
+    <div class="container errors">
         <ul>
             <?php foreach($validation_errors as $error) :?>
-                <li><?= $error; ?></li>
+                <li><i class="fas fa-exclamation"></i> <?= $error; ?></li>
             <?php endforeach; ?>
         </ul>
     </div>
 
 <?php endif; ?>
 
-<div class = "container">
-    <form method="post">
+<?php addGenre(); ?>
+    <h2>Pridekite nauja zanra</h2>
+<div class = "container add-genre">
+    <form method="post" class = "add-genre-form">
         <div class="form-group">
             <label>Zanro pavadinimas</label>
             <input class="form-control" id="pavadinimas" name="pavadinimas">
         </div>
-        <button type="submit" class="btn btn-primary" id="submit" name="submit">Patvirtinti</button>
+        <div class = "add-genre-button">
+            <button type="submit" class="btn btn-secondary" id="submit" name="submit">Patvirtinti</button>
+        </div>
     </form>
 </div>
+<?php else:?>
+    <?php header('Location:'.path.'?page=prisijungti'); ?>
+<?php endif;?>

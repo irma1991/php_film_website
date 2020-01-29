@@ -292,4 +292,62 @@ function deleteGenre2(){
 }
 
 
+function getUserByName($input){
+    $conn = connectionDB();
+    try{
+        if($conn){
+            $stmt = $conn->prepare('SELECT * FROM vartotojai
+                                  WHERE username LIKE ?');
+            $stmt->bindValue(1,"%$input%", PDO::PARAM_STR);
+            $stmt->execute();
+            $result = $stmt->fetch();
+        }
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    } return $result;
+}
+
+function formFilmValidation(){
+    $validation_errors=[];
+    if (isset($_POST['submit'])){
+        if (!preg_match('/\w{1,30}$/',
+            trim(htmlspecialchars($_POST['pavadinimas']))) ){
+            $validation_errors[] = "Netinkamas pavadinimo formatas";
+        } else {
+            $_POST['pavadinimas'] = trim(htmlspecialchars( $_POST['pavadinimas']));
+        }
+        if (!preg_match('/[\w\s{50,1000}]/i',
+            trim(htmlspecialchars($_POST['aprasymas'])))) {
+            $validation_errors[] = "Netinkamas aprasymo formatas";
+        } else {
+            $_POST['aprasymas'] = trim(htmlspecialchars($_POST['aprasymas']));
+        }
+
+        if (!preg_match('/\w{1,30}$/',
+            trim(htmlspecialchars($_POST['rezisierius']))) ){
+            $validation_errors[] = "Netinkamas rezisieriaus formatas";
+        } else {
+            $_POST['rezisierius'] = trim(htmlspecialchars( $_POST['rezisierius']));
+        }
+//        if (!preg_match('/\d\.\d/',
+//            trim(htmlspecialchars($_POST['imdb'])))){
+//            $validation_errors[] = "Netinkamas ivertinimu formatas";
+//        } else {
+//            $_POST['imdb'] = trim(htmlspecialchars($_POST['imdb']));
+//        }
+    } return $validation_errors;
+}
+
+function formGenreValidation(){
+    $validation_errors=[];
+    if (isset($_POST['submit'])){
+        if (!preg_match('/\w{1,30}$/',
+            trim(htmlspecialchars($_POST['pavadinimas']))) ){
+            $validation_errors[] = "Netinkamas pavadinimo formatas";
+        } else {
+            $_POST['pavadinimas'] = trim(htmlspecialchars( $_POST['pavadinimas']));
+        }
+    }return $validation_errors;
+}
+
 

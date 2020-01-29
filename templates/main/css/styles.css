@@ -1,0 +1,51 @@
+.all-films-table, .show-by-genre-table, .search-film-table, .films-management-table, .genres-management-table{
+    background-color: #86cfda;
+}
+
+.all-films-table-head, .show-by-genre-table-head, .search-film-table-head, .films-management-table-head, .genres-management-table-head{
+    background-color: #20c997;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.my-button{
+    background-color: #86cfda;
+}
+
+.show-by-genre, .search-film{
+    padding-top: 20px;
+}
+
+.delete-film{
+    background-color: #e4606d;
+}
+
+.update-film{
+    background-color: #ffc107;
+}
+
+.add-film, .add-genre{
+    background-color: #86cfda;
+}
+
+.add-film-form, .add-genre-form{
+    padding: 25px;
+}
+
+.add-film-button, .add-genre-button{
+    padding-top: 20px;
+}
+
+.errors{
+    background-color: #e4606d;
+    margin-top: 20px;
+}
+
+.errors ul{
+    list-style: none;
+}

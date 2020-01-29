@@ -10,6 +10,11 @@
 
     <title>Filmu valdymo puslapis</title>
 
+    <!-- My CSS -->
+    <link href="/php_film_website/templates/main/css/styles.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/04b00d367c.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="/php_film_website/templates/main/css/bootstrap.min.css" rel="stylesheet">
 
